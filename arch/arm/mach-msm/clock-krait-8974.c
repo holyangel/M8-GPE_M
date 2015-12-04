@@ -522,7 +522,7 @@ static void get_krait_bin_format_b(struct platform_device *pdev,
 
 		//elementalx
 		if (arg_cpu_oc == 0 && *speed == 1)
-			arg_cpu_oc = 2265600;
+			arg_cpu_oc = 2457600;
 		else if (arg_cpu_oc == 0 && *speed == 3)
 			arg_cpu_oc = 2457600;
 					
@@ -724,8 +724,8 @@ static unsigned int pvs_config_ver;
 module_param(pvs_config_ver, uint, S_IRUGO);
 
 #ifdef CONFIG_MSM_CPU_VOLTAGE_CONTROL
-#define CPU_VDD_MAX	1150
-#define CPU_VDD_MIN	675
+#define CPU_VDD_MAX	1200
+#define CPU_VDD_MIN	600
 
 extern int use_for_scaling(unsigned int freq);
 static unsigned int cnt;
